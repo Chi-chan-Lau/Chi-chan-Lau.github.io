@@ -23,13 +23,13 @@
                   Zichen Liu
                 </p>
                 <p>
-                  I am a Ph.D. student in Computer Science at <a href="https://www.asu.edu/">Arizona State University</a>, advised by <a href="https://xusheng-xiao.github.io/">Prof. Xusheng Xiao</a>. 
+                  I am a Ph.D. student in Computer Science at <a href="https://www.asu.edu/">Arizona State University</a>, advised by <a href="https://xusheng-xiao.github.io/">Prof. Xusheng Xiao</a> (expected graduation: May 2028).
                 </p>
                 <p>
                   Previously, I obtained my M.S. in ECE from the <a href="https://www.washington.edu/">University of Washington</a> and my B.S. in Physics from <a href="https://en.lzu.edu.cn/">Lanzhou University</a> (Cuiying Honors College).
                 </p>
                 <p>
-                  My research interests lie at the intersection of <strong>Software Engineering</strong>, <strong>Program Analysis</strong>, and <strong>Machine Learning</strong>. I work on combining program analysis with Large Language Models to make software behavior legible and to build defenses on top of it &mdash; describing how mobile apps use sensitive data, detecting online scams from conversation, and guiding automated vulnerability repair.
+                  My research interests lie at the intersection of <strong>Software Engineering</strong>, <strong>Program Analysis</strong>, and <strong>Machine Learning</strong>, with a focus on LLM-based software analysis, vulnerability repair, and AI security. I combine program analysis with Large Language Models to make software behavior legible and to build defenses on top of it &mdash; describing how mobile apps use sensitive data (AppBDS, BinCtx), detecting online scams while a conversation is still unfolding (EARS), and structuring security knowledge to guide automated vulnerability repair.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:zliu396@asu.edu">Email</a> &nbsp;/&nbsp;
@@ -81,14 +81,15 @@
         Yanfang Ye,
         <a href="https://xusheng-xiao.github.io/">Xusheng Xiao</a>
         <br>
-        <em>Under submission to IEEE Symposium on Security and Privacy (S&amp;P)</em>, 2027
+        <em>Under review at IEEE Symposium on Security and Privacy (S&amp;P)</em>, 2027
         <br>
         <a href="https://arxiv.org/abs/2606.16052">arXiv</a>
         <p></p>
         <p>
-          We derive a hierarchical taxonomy of scam scenarios from 102K real-world incident reports, then transfer that
-          scenario knowledge to bank customer-service conversations with EARS, which infers the scam scenario
-          mid-conversation so a warning can be raised while the call is still going.
+          We derive a hierarchical taxonomy of 18 scam scenarios from 102K real-world incident reports, then transfer that
+          scenario knowledge to bank customer-service conversations with EARS (Early Anti-scam Recognition System), which
+          withholds judgment on benign turns and commits to a scam scenario as soon as diagnostic evidence appears,
+          so a warning can be raised while the call is still going.
         </p>
       </td>
     </tr>
@@ -161,7 +162,9 @@
         <a href="https://www.arxiv.org/abs/2510.14344">arXiv</a>
         <p></p>
         <p>
-          A multi-modal representation learning approach for robust Android app behavior detection.
+          BinCtx fuses a bytecode-as-image view, manifest/URL context, and third-party-library usage along call paths to
+          detect malware and undesired app behaviors (94.73% macro-F1 on ~17K apps), and stays robust under commercial
+          code obfuscation and adversarial samples.
         </p>
       </td>
     </tr>
@@ -191,15 +194,20 @@
         Jiongxiao Wang*,
         <strong>Zichen Liu*</strong>,
         Keun Hee Park,
+        Zhuojun Jiang,
+        Zhaoheng Zheng,
+        Zhuofeng Wu,
         Muhao Chen,
         Chaowei Xiao
+        (*equal contribution)
         <br>
         <em>arXiv preprint</em>, 2023
         <br>
         <a href="https://arxiv.org/abs/2305.14950">arXiv</a>
         <p></p>
         <p>
-          We reveal a critical vulnerability in In-Context Learning (ICL) where subtly manipulating demonstration examples can mislead LLMs into making targeted misclassifications.
+          advICL shows that a black-box attacker who perturbs only the in-context demonstrations, leaving the query untouched,
+          can steer LLMs into targeted misclassifications; Transferable-advICL makes one adversarial demonstration transfer to unseen inputs.
         </p>
       </td>
     </tr>
@@ -229,14 +237,15 @@
         Cheng-Yen Yang*,
         Aotian Zheng*,
         <strong>Zichen Liu</strong>,
+        Yujie Li,
         Jenq-Neng Hwang
         <br>
-        <em>ICCV Workshops</em>, 2021
+        <em>ICCV 2021 Multi-camera Multiple People Tracking Workshop</em> (challenge entry, winner talk)
         <br>
         <a href="https://iccv2021-mmp.github.io/#speakers">presentation</a>
         <p></p>
         <p>
-          Ranked 3rd out of ~80 teams in the MMP-Tracking Challenge. Developed a system integrating FairMOT with a novel cross-camera tracklet association algorithm.
+          3rd place in the MMP-Tracking Challenge. We built a multi-camera tracking system whose cross-camera tracklet association extends a single-camera tracker (FairMOT) across views.
         </p>
       </td>
     </tr>
